@@ -1,101 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio using HTML and CSS</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="lovisha.jpg">
+                </div>
+                <h2>Lovisha Ahuja <br><span>Web Developer</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+91 ***** *****</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text"><a href="">lovisha0708.cse19@chitkara.edu.in</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://github.com/Lovisha0708">https://github.com/Lovisha0708</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text"><a href="">https://www.linkedin.com/in/lovisha-9a48021ab/</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="education">
+                <h3 class="title">EDUCATION</h3>
+                <ul>
+                    <li>
+                        <h5>2019 - 2023</h5>
+                        <h4>Bachelor Degree in Computer Science</h4>
+                        <h4>Chitkara University</h4>
+                    </li>
+                    <li>
+                        <h5>2017 - 2019</h5>
+                        <h4>High School</h4>
+                        <h4>DAV Public School, Tohana</h4>
+                    </li>
+                </ul>
+                <div class="language">
+                    <h3 class="title">LANGUAGES</h3>
+                    <ul>
+                        <li>
+                    <span class="text">English</span>
+                    <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                </li>
+                <li>
+                    <span class="text">hindi</span>
+                    <span class="percent">
+                        <div style="width: 90%;"></div>
+                    </span>
+                </li>
+                </ul>
+                 </div>
+            </div>
+        </div>
 
-  <nav id="Home" class="navbar">
-    <ul><li><a href="#home">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact me</a></li>
-    </ul>
-  </nav>
-  <section id="home">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h1 class="heading">HI, I AM</h1><br>
-    <h1 class="heading">LOVISHA AHUJA</h1>
-    <br><br> 
-    <p class="head">AND THIS IS MY PORTFOLIO</p>
-  </section>
-  <section id="portfolio">
-    <h1 class="heading1">Portfolio</h1>
-    <div class="gallery">
-      <img src="1.jpg" alt="">
-      <img src="2.jpg" alt="">
-      <img src="1.jpg" alt="">
-      <img src="2.jpg" alt="">
-      <img src="1.jpg" alt="">
-      <img src="2.jpg" alt="">
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>A motivated individual with in-depth knowledge of languages and development tools, seeking a
+                    position in a growth-oriented company while having the scope to develop my own skills.
+                   <br><br> Looking for a progressive company where i am able to devlop my skills in Java Development and full-stack development.
+                </p>
+            </div>
+            <div class="skills">
+                <h2 class="title2">Technical Skills</h2>
+                  <ul>
+                      <li>Java</li>
+                      <li>Data structure & Alogrithm</li>
+                      <li>Java Swing</li>
+                      <li>Database Design</li>
+                      <li>MySQL</li>
+                      <li>Oracle Database</li>
+                      <li>Git</li>
+                      <li>Version Control</li>
+                      <li>Html5</li>
+                      <li>Css</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                      <li>ReactJS</li>
+                      <li>C/C++</li>
+                      <li>Microservices and web services development</li>
+                  </ul>
+            </div>
+            <div class="project">
+                <h2 class="title2">projects</h2>
+                <ul>
+                    <li>
+                        <h3>Inventory Management System</h3>
+                        <h5>Aug21 - Sep21</h5>
+                        <h4>This is an inventory managment software built in Java Swing using MySQL database that can be used at any Point of scale of a small to mid-sized store</h4>
+                    </li>
+                    <li>
+                        <h3>myNote</h3>
+                        <h5>Oct21 - Jan22</h5>
+                        <h4>This is a Notepad-like text-editor built in java using AWT and Swing</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </section>
-  <section id="education">
-    <h1 class="heading1">Education</h1>
-    <div class="coloum">
-    <div class="box">
-      <h2>Bachelors in computer science</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis numquam
-         aspernatur itaque minus quia minima delectus cupiditate eveniet rerum quos!
-          Inventore veniam rerum quasi dolorum iure, ut aliquam. Ea, numquam?</p>
-    </div>
-    <div class="box">
-      <h2>Bachelors in computer science</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis numquam
-         aspernatur itaque minus quia minima delectus cupiditate eveniet rerum quos!
-          Inventore veniam rerum quasi dolorum iure, ut aliquam. Ea, numquam?</p>
-    </div>
-    <div class="box">
-      <h2>Bachelors in computer science</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis numquam
-         aspernatur itaque minus quia minima delectus cupiditate eveniet rerum quos!
-          Inventore veniam rerum quasi dolorum iure, ut aliquam. Ea, numquam?</p>
-    </div>
-    </div>
-  </section>
-  <section id="about">
-    <h1 class="heading1" id="aboutH">About me</h1>
-    <div class="about">
-      <img src="lovisha.jpg" alt="My pic">
-      <div class="name">
-        <h2>I'm Lovisha Ahuja</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-           Dolore, reprehenderit ut quidem harum similique voluptatem
-           praesentium soluta, rem ducimus dolores odit accusantium cum qui 
-           aliquam. Laboriosam excepturi velit vitae odit?Lorem ipsum, dolor
-           sit amet consectetur adipisicing elit. Obcaecati rerum repellat,
-           animi saepe minima tempore earum molestias neque praesentium 
-           labore iste cupiditate molestiae culpa laborum dolore quo ducimus.
-           Blanditiis, velit?Lorem ipsum dolor sit amet consectetur adipisicing
-           elit. Tempore nostrum, nesciunt nihil similique, illum at, ullam
-           corporis enim laboriosam voluptatum molestiae vel quae aperiam saepe
-           obcaecati cumque ratione totam unde. Lorem ipsum dolor sit amet, 
-           consectetur adipisicing elit. Facilis dolores omnis dolor voluptatem
-           , nam, nihil temporibus libero nostrum repellat voluptas ducimus! 
-           Hic qui magnam voluptatum laudantium excepturi vitae odio omnis?
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque 
-           tempore pariatur, quia debitis dolore odit distinctio inventore 
-           suscipit error eveniet reiciendis dignissimos unde, itaque consequatur,
-           in architecto praesentium illum Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Quasi quo ut illum tempore autem quia quam qui mollitia
-           quis nobis, velit dolore ex, accusantium exercitationem distinctio corrupti
-           officia et eaque.</p>
-      </div>
-    </div>
-  </section>
-  <section id="contact">
- <h1 class="heading1">Contact Me</h1>
-  <form action="" class="form">
-   <input type="text" name="name" class="input" placeholder="Enter your Name">
-   <input type="email" name="email" class="input" placeholder="Enter your E-mail">
-   <textarea name="message" id="message" rows="20" cols="70" placeholder="Enter your message"></textarea>
-   <input type="submit" value="Submit" id="submit">
-  </form>
-  </section>
 </body>
 </html>

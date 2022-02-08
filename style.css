@@ -1,207 +1,199 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
 }
-html{
-    scroll-behavior: smooth;
-}
-/* navbar*/
-.navbar {
-   display: flex;
-   justify-content: center;
-   height: 50px;
-   align-items: center;
-   position: relative;
-}
-.navbar::before{
-  content: " ";
-  position: absolute;
-  background-color: #000000dc;
-  height: 100%;
-  width: 100%;
-   z-index: -1;
-}
-.navbar ul{
+body{
+    background: skyblue;
     display: flex;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.navbar ul li{
-    font-size: 1.1rem;
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
-.navbar ul li a{
-    padding: 5px 20px;
-    text-decoration: none;
-    color: white;
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding:40px;
 }
-.navbar ul li a:hover{
-    border-bottom: 2px solid white;
-}
-/*Home Section*/
-#home{
+.profileText{
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 650px;
-   justify-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
     align-items: center;
 }
-#home::before{
-  content: " ";
-  position: absolute;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('lovisha.jpg') no-repeat center center/cover;
-  top: 50px;
-  left: 0;
-  height: 650px;
-  width: 100%;
-   z-index: -1;
-   opacity: .8;
+.contactInfo ul{
+    position: relative;
 }
-#home:hover{
-    
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.9;
-}
-.heading{
-    color: black;
-    font-size: 3rem;
-    transform: scale(1,1.3);
-    text-align: center;
-}
-.heading,.head{
-   font-family: Verdana, sans-serif,Montserrat;
-   background-color: #fbc7ce;
-   border-radius:15px;
-   padding-left: 10px;
-   padding-right: 10px;
-  position: relative;
-  bottom: 0px;
-}
-/*portfolio*/
-.heading1{
-    font-size: 3rem;
-    transform: scale(1,1.3);
-    text-align: center;
-    color: white;
-    margin: 60px;
-}
-#portfolio{
-    display: flex;
-    flex-direction: column;
-    background: #000000dc;
-}
-.gallery{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.gallery img{
-    width: 360px;
-    height: 640px;
-    padding: 10px;
-    margin: 5px;
-}
-.gallery img:hover{
-    background-color: white;
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin:10px 0;
     cursor: pointer;
+    color: #fff;
+
 }
-/*education*/
-#education{
-    display: flex;
-    flex-direction: column;
-    background-color: #000000dc;
-    color: white;
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
 }
-.coloum{
-    display: flex;
-   flex-direction:row;
-   padding-left:  100px; ;
-   margin-bottom: 5px;
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
 }
-.box{
-    padding:50px;
-    margin: 15px;
-    height: 200px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+.contactInfo ul li a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
 }
-.box:hover{
-    transform: scale(1.1);
+.education{
+    padding-top: 40px;
 }
-.box h2{
-    color: whitesmoke;
-    font-size: 2rem;
+.education ul{
+    list-style-type: none;
     margin-bottom: 40px;
 }
-/*About section*/
-#about{
-    display: flex;
-    flex-direction: column;
-    height: 600px;
+.education li{
+    margin-bottom: 15px;;
 }
-#aboutH{
-    color: black
+
+.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height:6px;
+    background: black;
+    display: block;
+    margin-top: 10px;
+}
+.language .percent div{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.language ul{
+    list-style-type: none;
+}
+.language li{
+    margin-bottom: 15px;
+    color: #fff;
+}
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding:40px;
 }
 .about{
-    display: flex;
+    margin-bottom: 50px;
 }
-.about img{
-    width: 450px;
-    height: 350px;
-    padding: 10px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 40px;
+.about:last-child{
+    margin-bottom: 0;
 }
-.about img:hover{
-    background-color: black;
-    cursor: pointer;
+.title2{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.name{
-    padding: 10px;
-   text-align: justify;
+p{
+    color: #003147;
 }
-.name h2{
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+.skills ul{
+    margin-bottom: 50px;
+    list-style-type: square;
 }
-.name p{
-    font-size: 1.1rem;
+.skills ul li{
+    color: #003147;
 }
-/*Contact me*/
-#contact{
-    display: flex;
-    flex-direction: column;
-    background-color: #000000dc;
+.project ul{
+    list-style-type: none;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.project ul li{
+    margin-bottom: 15px;;
 }
-.input{
-    padding: 15px 20px;
-    margin: 15px;
-    width: 35%;
-    border: none;
-    outline: none;
-    border-radius: 25px;
+.project ul li:nth-child(1){
+    margin-bottom: 25px;
 }
-#message{
-    margin:15px;
-    padding: 15px;
-    border-radius: 20px;
+.project ul h3{
+  color: #03a9f4;
+  margin-bottom: 10px;
+
 }
-#submit{
-    margin: 30px;
-    padding: 15px 20px;
-    width: 15%;
-    border-radius: 20px;
-    background-color: #000000dc;
-    color: whitesmoke;
-    border:none;
-    outline: none;
+.project ul h5{
+    text-align: end;
+    margin-bottom: 15px;
 }
-#submit:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+.project ul h4{
+    color: #003147;
 }
